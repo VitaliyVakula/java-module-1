@@ -1,0 +1,17 @@
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Пиши код ниже этой строки
+  
+  const orderedPrice = orderedQuantity * pricePerDroid + deliveryFee;
+  
+  const message = `Вы заказали дроидов на сумму ${orderedPrice} кредитов. Доставка (${deliveryFee} кредитов) включена в сумму заказа.`;
+
+  // Пиши код выше этой строки
+  return message;
+}
+makeOrderMessage(2, 100, 50);
+makeOrderMessage(4, 300, 100);
+makeOrderMessage(10, 70, 200);
+
+console.log(makeOrderMessage(2, 100, 50));
+console.log(makeOrderMessage(4, 300, 100));
+console.log(makeOrderMessage(10, 70, 200));

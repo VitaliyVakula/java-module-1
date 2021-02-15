@@ -1,0 +1,17 @@
+function isAdult(age) {
+  // Пиши код ниже этой строки
+  const passed = (age)>=18;
+
+  // Пиши код выше этой строки
+  return passed;
+}
+
+isAdult(20);
+isAdult(14);
+isAdult(8);
+isAdult(37);
+
+//cosole.log(isAdult(age));
+//cosole.log(isAdult(age));
+//cosole.log(isAdult(age));
+//cosole.log(isAdult(age));

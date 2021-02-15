@@ -1,0 +1,24 @@
+function checkStorage(available, ordered) {
+  let message;  
+  // Пиши код ниже этой строки
+  if (available >= ordered) {
+    message = 'Заказ оформлен, с вами свяжется менеджер';
+  } else { (available <= ordered)
+    message = 'На складе недостаточно товаров!';
+  }
+  // Пиши код выше этой строки
+  return message;
+}
+
+
+checkStorage(100, 50);  //150 true 
+checkStorage(100, 130); //230 false
+checkStorage(200, 20);  //220 true
+checkStorage(200, 150); //350 true  
+checkStorage(150, 180); //330 false
+
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));
+console.log(checkStorage(200, 20));
+console.log(checkStorage(200, 150));
+console.log(checkStorage(150, 180));
