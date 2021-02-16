@@ -1,11 +1,11 @@
 function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
   let message;
   // Пиши код ниже этой строки
-  const totalPrice = pricePerDroid * orderedQuantity;
   
-  if (totalPrice => customerCredits) {
-    
-    message = `Вы купили ${'orderedQuantity'} дроидов, на счету осталось ${'customerCredits'} кредитов`;
+  let totalPrice = (pricePerDroid * orderedQuantity);
+  if (totalPrice <= customerCredits) {
+    customerCredits -= totalPrice;
+    message = `Вы купили ${orderedQuantity} дроидов, на счету осталось ${customerCredits} кредитов`;
   } else {
     message = `Недостаточно средств на счету!`;
   }

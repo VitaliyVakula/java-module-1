@@ -1,0 +1,38 @@
+function getShippingCost(country) {
+  let message;
+  // Пиши код ниже этой строки
+  let price;
+  
+  switch (country) {
+    case 'Австралия':
+      price = 170;
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
+      break;
+    case 'Китай':
+      price = 100;
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
+      break;
+    case 'Чили':
+      price = 250;
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
+      break;
+     case 'Ямайка':
+      price = 120;
+      message = `Доставка в ${country} будет стоить ${price} кредитов`;
+      break;
+      
+    default:
+      message = 'Извините, в вашу страну доставки нет';
+  }
+    
+  // Пиши код выше этой строки
+  console.log (message);
+  return message;
+}
+
+getShippingCost('Австралия');
+getShippingCost('Германия');
+getShippingCost('Китай');
+getShippingCost('Чили');
+getShippingCost('Ямайка');
+getShippingCost('Швеция');
